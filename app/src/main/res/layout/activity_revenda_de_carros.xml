@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Revenda_De_Carros">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ano:"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_dark_background"/>
+
+        <EditText
+            android:id="@+id/textAno"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_dark_background" />
+
+        <Button
+            android:id="@+id/buttonBuscaAno"
+            android:onClick="clickBuscarAno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Buscar"
+            android:backgroundTint="@color/cardview_dark_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modelo:"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="11dp"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_dark_background"/>
+
+        <EditText
+            android:id="@+id/textModelo"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_dark_background" />
+
+        <Button
+            android:id="@+id/buttonBuscaNome"
+            android:onClick="clickBuscarNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Buscar"
+            android:backgroundTint="@color/cardview_dark_background"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listCarros"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/buttonAdicionar"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:onClick="clickAdicionar"
+        android:text="Adicionar"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>
